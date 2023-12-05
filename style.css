@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #DDE6ED;
+}
+.container{
+    height:100vh;
+    width:100%;
+}
+
+.outer_circle{
+    height:320px;
+    width:320px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #27374D;
+    margin-top: 15%;
+    margin-left: 40%;
+    box-shadow: 5px 5px 9px #252628,-5px -5px 9px white;
+}
+.inner_circle{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    position: absolute;
+    top:12%;
+    left:11%;
+    background-image: url(watchimg.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.circle{
+  width:14px;
+  height:14px;
+  border-radius: 50%;
+  border: 1px solid orchid;
+  position: absolute;
+  top:48%;
+  left: 47.5%;
+  z-index: 5;
+}
+#hour{
+  width:7px;
+  height:45px;
+  background-color: #27374D;
+  position: absolute;
+  top:33%;
+  left:50%;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom;
+  z-index: 2;
+}
+#minute{
+  width:5px;
+  height:65px;
+  background-color: #27374D;
+  position: absolute;
+  top:25%;
+  left:50%;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom;
+  z-index: 1;
+}
+#seconds{
+  width:3px;
+  height:100px;
+  /* background-color: black; */
+ background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 12%, rgba(0,0,0,1) 60%);
+  position: absolute;
+  top:11%;
+  left:50%;
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom;
+  z-index: 4;
+}
